@@ -5,12 +5,14 @@
     /* start of the login form*/
 /* Bordered form */
 form {
+  padding-top:100px;
+  height:500px;
   border: 3px solid #f1f1f1;
 }
 
 /* Full-width inputs */
 input[type=text], input[type=password] {
-  width: 100%;
+  width: 60%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -26,7 +28,7 @@ button {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 60%;
 }
 
 /* Add a hover effect for buttons */
@@ -56,6 +58,8 @@ img.avatar {
 /* Add padding to containers */
 .container {
   padding: 16px;
+  margin-left:35% ;
+  margin-right: 15%;
 }
 
 /* The "Forgot password" text */
@@ -74,6 +78,9 @@ span.psw {
     width: 100%;
   }
 }
+#close{
+  width: 40%;
+}
 /* end of the login form*/
 </style>
 
@@ -83,19 +90,19 @@ span.psw {
   </div>
 
   <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" >
+    <label for="uname"><b>Username</b></label> <br>
+    <input type="text" placeholder="Enter Username" > <br>
 
-    <label for="psw"><b>Password</b></label>
+    <label for="psw"><b>Password</b></label> <br>
     <input type="password" placeholder="Enter Password" >
 
     <button type="submit">Login</button>
-    <label>
+    <label> <br>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
   </div>
 
-  <div class="container" style="background-color:#f1f1f1">
+  <div id="close" class="container" style="background-color:#f1f1f1">
     <button type="button" class="cancelbtn">Cancel</button>
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
